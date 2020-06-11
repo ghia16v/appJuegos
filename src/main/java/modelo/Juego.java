@@ -5,14 +5,14 @@ public class Juego {
 	
 	private int idJuego;
 	private String nombre;
-	private String consola;
+	private int idConsola;
 	
 	//Constructor
 	public Juego() {
 		super();
 		this.idJuego=0;
 		this.nombre="";
-		this.consola="";
+		this.idConsola=0;
 	}
 	
 	public Juego(String nombre) {
@@ -36,19 +36,18 @@ public class Juego {
 		this.nombre = nombre;
 	}
 
-	public String getConsola() {
-		return consola;
+	public int getidConsola() {
+		return idConsola;
 	}
 
-	public void setConsola(String consola) {
-		this.consola = consola;
+	public void setidConsola(int idConsola) {
+		this.idConsola = idConsola;
 	}
 
 	@Override
 	public String toString() {
-		return "Juego [idJuego=" + idJuego + ", nombre=" + nombre + ", consola=" + consola + "]";
+		return "Juego [idJuego=" + idJuego + ", nombre=" + nombre + ", idConsola=" + idConsola + "]";
 	}
-	
-	
 
+	
 }
