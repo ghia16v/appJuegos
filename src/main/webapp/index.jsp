@@ -12,7 +12,10 @@
   <jsp:param name="title" value="index" /> 
 </jsp:include>
 
-<h1>Tabla de juegos exclusivos</h1>
-<a href="exclusivos.jsp">Mostrar juegos exclusivos</a>
+<jsp:include page="exclusivos.jsp" >
+  <jsp:param name="pagina" value="exclusivos" />
+  <jsp:param name="title" value="exclusisvos" /> 
+</jsp:include>
+
 </body>
 </html>
