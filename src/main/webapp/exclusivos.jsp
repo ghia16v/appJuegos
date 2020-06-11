@@ -4,15 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Página principal</title>
+<title>Listado de la tabla de juegos exclusivos</title>
 </head>
 <body>
 <jsp:include page="includes/cabecera.jsp" >
-  <jsp:param name="pagina" value="index" />
-  <jsp:param name="title" value="index" /> 
+  <jsp:param name="pagina" value="exclusivos" />
+  <jsp:param name="title" value="exclusivos" /> 
 </jsp:include>
-
-<h1>Tabla de juegos exclusivos</h1>
-<a href="exclusivos.jsp">Mostrar juegos exclusivos</a>
+<br>
+<br>
+<br>
+<br>
+<h1>Juegos Exclusivos</h1>
 </body>
 </html>

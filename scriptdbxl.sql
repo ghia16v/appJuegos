@@ -58,6 +58,7 @@ CREATE TABLE `exclusivos` (
   `idJuego` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `idConsola` int(11) NOT NULL,
+  `imagen` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`idJuego`),
   KEY `exclusivos_FK` (`idConsola`),
   CONSTRAINT `exclusivos_FK` FOREIGN KEY (`idConsola`) REFERENCES `consolas` (`idConsola`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -70,7 +71,7 @@ CREATE TABLE `exclusivos` (
 
 LOCK TABLES `exclusivos` WRITE;
 /*!40000 ALTER TABLE `exclusivos` DISABLE KEYS */;
-INSERT INTO `exclusivos` VALUES (1,'Final Fantasy VII Remake',3),(2,'Soleil',1),(3,'Sonic 3 & Knuckles',1),(4,'Alien III',2),(5,'Donkey Kong Land 2',4);
+INSERT INTO `exclusivos` VALUES (1,'Final Fantasy VII Remake',3,NULL),(2,'Soleil',1,NULL),(3,'Sonic 3 & Knuckles',1,NULL),(4,'Alien III',2,NULL),(5,'Donkey Kong Land 2',4,NULL);
 /*!40000 ALTER TABLE `exclusivos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -83,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-11 22:07:59
+-- Dump completed on 2020-06-11 22:40:04
